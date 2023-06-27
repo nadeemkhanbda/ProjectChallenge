@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinglePrice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Inter&family=Oswald:wght@400;500&family=Poppins&family=Roboto&family=Roboto+Condensed:ital@0;1&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {box-sizing: border-box;}
+
+        #background{
+           background-color: whitesmoke;
+            padding: 50px 50px;
+            margin: 80px 150px;
+            border-radius: 20px;
+        }
+        
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 0.5fr 0.5fr;
+            gap: 0;
+            
+        }
+
+        #grid-first{
+            grid-area: 1/1/2/3;
+            background-color: white;
+            text-align: start;
+            padding: 10px 25px 25px 35px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #grid-first h3{
+            color: rgb(2, 223, 223);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 16px;
+        }
+        .lightgreen{
+            color: rgb(218, 234, 3);
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 2px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .text-grey{
+            color: darkgray;
+            font-size: 11px;
+            font-weight: bold;
+            margin-top: -2px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #grid-second{
+            background-color:rgb(30, 177, 170);
+            font-family: 'Ubuntu', sans-serif;
+            padding-left: 35px;
+
+        }
+        #grid-three{
+            background-color:rgb(17, 200, 191) ;
+            font-family: 'Ubuntu', sans-serif;
+            padding-left: 35px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            font-size: 10px;
+            color: rgb(219, 218, 218);
+        }
+        h4{
+            color: white;
+        }
+        h2{
+            color: white;
+            display: inline-block;
+            margin: 0;
+            
+        }
+        #grid-second p{
+            display: inline-block;
+            padding-left: 10px;
+            font-size: 10px;
+            color: rgb(193, 189, 189);
+        }
+        .access{
+            text-align: start;
+            margin: 0px;
+            color: white;
+        }
+        h5{
+            background-color: yellow;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div class="grid">
+            <div id="grid-first">
+                <h3>Join our community</h3>
+                <p class="lightgreen">30-day, hassle-free money back guarantee</p>
+                <p class="text-grey">Gain access to ur full library of tutorials along with expert code reviews.Pefect for any developers who are serious about honing their skills.</p>
+            </div>
+            <div id="grid-second" >
+                <h4 class="sub">Monthly Subscription</h4>
+                <h2>$29</h2><p>per month</p>
+                <h6 class="access">Full access for less than $1 a day</6>
+                <h5 class="sign">Sign Up</h5>
+            </div>
+            <div id="grid-three">
+                <h4>Why Us</h4>
+                <ul>
+                    <li>Tutorials by industry experts</li>
+                    <li>Peer & expert code reviews</li>
+                    <li>Coding exercises</li>
+                    <li>Access to our Github repos</li>
+                    <li>Community forum</li>
+                    <li>Flashcard decks</li>
+                    <li>New videos every week</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
