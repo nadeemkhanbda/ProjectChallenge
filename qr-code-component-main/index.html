@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Inter&family=Kumbh+Sans&family=Oswald:wght@400;500&family=Outfit&family=Poppins&family=Roboto&family=Roboto+Condensed:ital@0;1&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     * {
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+     }
+    .background{
+      background-color:rgb(208, 222, 222);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #card{
+      background-color: white;
+      margin: 100px 200px;
+      width: 250px;
+      padding: 10px;
+      border-radius: 10px;
+      }
+      img{
+        border-radius: 10px;
+      }
+      .content{
+        padding: 15px;
+      }
+      h4{
+        margin-top: -2px;
+      }
+      p{
+        margin-top: -10px;
+        font-size: 10px;
+        margin-left: 2px;
+        color: rgb(148, 147, 147);
+      }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div id="card">
+      <div class="barcode">
+        <img src="./images/image-qr-code.png" width="100%" alt="">
+      </div>
+      <div class="content">
+        <h4>Imrove your fornt-end skills by building project</h4>
+        <p>Scan the QR code to visit the front-end Mentor and take your coding skills to <span style="margin-left: 50px;">the next level.</span> </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
