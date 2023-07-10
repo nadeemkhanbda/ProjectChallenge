@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Fraunces:wght@700&family=Inter&family=Kumbh+Sans&family=Lexend+Deca&family=Montserrat:wght@500&family=Oswald:wght@400;500&family=Outfit&family=Poppins&family=Roboto&family=Roboto+Condensed:ital@0;1&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-image: url(./images/bg-intro-desktop.png);
+      background-color: hsl(0, 100%, 74%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .card{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      width: 70%;
+      margin: 1rem 5rem;
+      gap: 1rem;
+    }
+    .textcontent{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 3rem 3rem;
+      margin: 2rem 1rem;
+      
+    }
+    .title{
+      color: white;
+      font-weight:700;
+      font-size: 2.5rem;
+      text-align: left;
+      margin-bottom: 15px;
+      padding: 0;
+      line-height: 2.5rem;
+}
+.para{
+  color:rgb(234, 232, 232) ;
+  margin: 0;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.form{
+  width: 40%;
+  display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1rem 1rem 3rem 0;
+      height: 100%;
+      gap: 15px;
+}
+.form1{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.8rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 8px 4px rgba(11, 8, 10, 0.2) ;
+  gap: 15px;
+}
+.form1 input{
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 2px solid rgb(203, 202, 202);
+}
+.offer{
+  color: rgb(233, 231, 231);
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1.25px solid rgb(121, 121, 121);
+  background-color: hsl(248, 32%, 49%) ;
+  box-shadow: 0px 5px 2px rgba(11, 8, 10, 0.2) ;
+}
+::placeholder{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  padding: 20px;
+}
+.btn{
+  background-color: hsl(154, 59%, 51%);
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  
+}
+.footer{
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: lightgray;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:650px){
+  body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  .textcontent{
+    width: 100%;
+    padding: 0;
+  }
+.textcontent .title{
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+  padding: 0 15px;
+  text-align: center;
+}
+.textcontent .para{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+.form{
+  width: 100%;
+}
+.offer{
+  padding: 1rem 4rem;
+}
+.form1{
+  margin-top: 0.4rem;
+  padding: 1.2rem 1.5rem 0.5rem 1.5rem;
+}
+.footer{
+  padding: 0 15px;
+  text-align: center;
+  font-size: 0.5rem;
+  margin-top: -5px;
+}}
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <section class="textcontent">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="para">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </section>
+    <section class="form">
+      <p class="offer"><span style="color: white;font-weight: bold;">Try it free 7 dyas</span> then $20/mo. thereafter</p>
+      <form action="message.html" class="form1" method="post" onsubmit="return validate()" target="_parent">
+        <input type="text" id="first-name"  placeholder="First Name ">
+        <input type="text" id="last-name"  placeholder="Last Name" >
+        <input type="text" id="email"  placeholder="Email Address">
+        <input type="text" id="password"  placeholder="Password">
+        <button class="btn" type="submit">CLAIM YOUR FREE TRIAL</button>
+        <P class="footer">By clicking the button, you are agreeing to our <SPAN style="color: red;">Terms and Services</SPAN></P>
+      </form>
+      
+    </section>
+  </div>
+  <script>
+    function validate(){
+      const fname = document.getElementById("first-name").value;
+      const lname = document.getElementById("last-name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      if (fname.trim() == "" && lname.trim() == "" && email.trim() == "" && password.trim() == ""){
+        alert("These all Field cannot be empty");
+        return false;
+      }
+      if (!email.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+        alert("The email address should have this structure 'name@host.tld'");
+        return false;
+      }
+      else 
+      return true;
+    }
+  </script>
+</body>
+</html>
+
