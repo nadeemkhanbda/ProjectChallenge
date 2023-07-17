@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@300&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .card{
+      width: 300px;
+      padding: 1rem 1rem;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 10px;
+      box-shadow: 0px 15px 8px 15px rgb(8, 3, 41), 0px 20px 10px 40px  hsl(217, 61%, 10%);
+    }
+
+    h1{
+      color: white;
+      font-size: 1rem;
+      display: inline-block;
+      margin: 1rem 0;
+    }
+    
+    .para{
+      color: rgb(141, 141, 174);
+      margin-bottom: 1rem;
+    }
+
+    .remainder{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .ethereum-section{
+      color: hsl(178, 100%, 50%);
+      margin-bottom: 1rem;
+      }
+    
+    .clock-section{
+      color:rgb(141, 141, 174);
+      margin-bottom: 1rem;
+    }
+    
+    
+    ul{
+      list-style-type: none;
+    }
+    .ethereum-section li{
+      display: inline-block;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    .clock-section li{
+      display: inline-block;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    img{
+      padding: 0;
+      margin-bottom: -3px;
+    }
+
+    hr{
+      border: none ;
+      height: 1px;
+      background:  hsl(215, 32%, 27%);
+    }
+
+    .foot{
+      display:flex;
+      gap: 10px;
+      margin-top: 25px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .foot img{
+      margin-top: -100px;
+      padding: 0;
+    }
+    .foot .name{
+      color: white;
+    }
+
+    @media screen and (max-width:500px){
+      .card{
+        width: 70%;
+        height: 80%;
+        margin: 20px 50px;
+      }
+    }
+    #image{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
